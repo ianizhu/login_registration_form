@@ -1,0 +1,113 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-italic.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800italic - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 800;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-800italic.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-900 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/montserrat-v26-cyrillic_latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  body {
+    background-color: #f5f2eb;
+    color: #0d1321;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .avatar {
+    border: 3px solid #3e5c76;
+    /* padding: 10rem 4rem; */
+  }
+
+  .fa-circle-user {
+    font-size: 12rem;
+    color: #3e5c76;
+  }
+
+  .user-info {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .main__info {
+    color:#000;
+    font-weight: 500;
+  }
+
+  .value{
+    border-bottom: 1px solid black;
+  }
+
+  .change__btn {
+    width: 75%;
+    margin: auto;
+  }
+
+  .edit-btn {
+    float: right;
+  }
+
+  .btn-info {
+    background-color: #7594bd;
+    border: 2px solid #647d9e;
+  }
+
+  .btn-info:hover {
+    background-color: #3e5068;
+    border: 2px solid #647d9e;
+  }
+
+  #textInput {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    width: 85%;
+    display: inline-block;
+  }
+
+  .lk-exit__btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }

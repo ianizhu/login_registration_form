@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login&Registration Form</title>
+    <script src="https://kit.fontawesome.com/2f982d2680.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form__container login">
+            <form onsubmit="authForm(this); return false">
+                <h1>Войти</h1>
+                <div class="input__container">
+                    <input 
+                    type="email" 
+                    placeholder="Введите e-mail"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Введите e-mail'"
+                    minlength="5"
+                    autocomplete="email"
+                    tabindex="1"
+                    name="email"
+                    required
+                    />
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    
+                </div>
+                <div class="input__container">
+                    <input 
+                    type="password" 
+                    placeholder="Введите пароль"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Введите пароль'"
+                    minlength="4"
+                    autocomplete="current-password"
+                    tabindex="2"
+                    name="password"
+                    id="formPass"
+                    required
+                    />
+                    
+                    <span class="input-group-text pass__field">
+                        <i class="fa-regular fa-eye-slash close-eye" 
+                        id="hideEye"></i>
+                        <i class="fa-regular fa-eye open-eye" id="showEye"></i>
+                    </span>
+                </div>
+                <div class="forget__password">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <p class="info__login"></p>
+                <button type="submit" class="btn login-btn">Войти</button>
+                
+            </form>
+        </div>
+
+        <div class="form__container register">
+            <form onsubmit="sendForm(this); return false">
+                <h1>Зарегистрироваться</h1>
+                <div class="input__container">
+                    <input 
+                    type="text" 
+                    placeholder="Ваше имя"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Ваше имя'"
+                    minlength="2"
+                    autocomplete="username"
+                    tabindex="1"
+                    name="name"
+                    required
+                    />
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    
+                </div>
+                <div class="input__container">
+                    <input 
+                    type="text" 
+                    placeholder="Ваша фамилия"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Ваша фамилия'"
+                    minlength="2"
+                    autocomplete="family-name"
+                    tabindex="2"
+                    name="lastname"
+                    required
+                    />
+                    <span class="input-group-text"><i class="fa-solid fa-people-roof"></i></span>
+                    
+                </div>
+                <div class="input__container">
+                    <input 
+                    type="email" 
+                    placeholder="Введите e-mail"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Введите e-mail'"
+                    minlength="5"
+                    autocomplete="email"
+                    tabindex="3"
+                    name="email"
+                    required
+                    />
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    
+                </div>
+                <div class="input__container">
+                    <input 
+                    type="password" 
+                    placeholder="Придумайте пароль"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Придумайте пароль'"
+                    minlength="4"
+                    autocomplete="new-password"
+                    tabindex="4"
+                    name="password"
+                    required
+                    />
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    
+                </div>
+                <p class="info__register"></p>
+                <button type="submit" id="submitBtn" class="register-btn btn">Зарегистрироваться</button>
+                
+            </form>
+        </div>
+
+        <div class="toggle__box">
+            <div class="toggle__panel toggle-right">
+                <h1 class="welcome">Добро пожаловать!</h1>
+                <p>Еще нет аккаутна?</p>
+                <button class="btn register__btn">Зарегистрироваться</button>
+            </div>
+            <div class="toggle__panel toggle-left">
+                <h1 class="welcome">Рады снова Вас видеть!</h1>
+                <p>Уже зарегистрированы?</p>
+                <button class="btn login__btn">Войти</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // async function sendForm(form) {
+        //     let response = await fetch("php/reg.php", {
+        //         method: "POST",
+        //         body: new FormData(form),
+        //     });
+        //     let result = await response.text();
+        //     if (result == "ok") {
+        //         alert("Успешно зарегистрирован");
+        //     }else if(result == "exist") {
+        //         alert("Похоже, такой пользователь есть");
+        //     }
+        // }
+
+        // async function authForm(form) {
+        //     let response = await fetch("php/auth.php", {
+        //         method: "POST",
+        //         body: new FormData(form),
+        //     });
+        //     let result = await response.text();
+        //     if (result == "ok") {
+        //         location.href = "php/lk.php"
+        //     }else if(result == "not_found") {
+        //         alert("Похоже, такого пользователя нет");
+        //         info.innerText = "Не найдено"
+        //     } else {
+        //       alert("Неизвестная ошибка")
+        //     }
+        // }
+    </script>
+</body>
+</html>
